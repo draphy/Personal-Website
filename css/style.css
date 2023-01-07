@@ -69,6 +69,10 @@ body {
   color: #e5e5e5;
   text-align: left; 
 }
+body::-webkit-scrollbar{
+  display: none;
+}
+
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -78,6 +82,11 @@ hr {
   box-sizing: content-box;
   height: 0;
   overflow: visible; }
+
+  div#ftco-nav {
+   
+    justify-content: center;
+}
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
