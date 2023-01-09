@@ -9762,3 +9762,38 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+  
+    @media screen and (max-width: 1199px) {
+      #circleImgAbout {
+        padding: 151px 40px 190px 40px !important;
+        top: -60px;
+      }
+      .circle {
+        top: 7rem !important;
+    width: 29rem !important;
+    height: 29.5rem !important;
+    left: 4px !important;
+      }
+    }
+
+    @media screen and (max-width: 994px) {
+      #circleImgAbout {
+        padding: 205px 40px 347px 40px !important;
+        top: -73px;
+      }
+      .circle {
+        top: 10rem !important;
+        width: 22.3rem !important;
+        height: 21.8rem !important;
+        left: -6px !important;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      #circleImgAbout1{
+        display: none !important
+        ;
+      }
+    }
+
+
