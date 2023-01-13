@@ -46,8 +46,6 @@ $(document).ready(function () {
         },
       },
       submitHandler: function (form) {
-        console.log("True");
-        console.log("in function submit");
         submit();
       },
     });
@@ -74,7 +72,10 @@ $(document).ready(function () {
           showMethod: "fadeIn",
           hideMethod: "fadeOut",
           onHidden: function () {
-            window.location.reload();
+            document.getElementById('connectName').value = null
+            document.getElementById('connectEmail').value = null
+            document.getElementById('connectMessage').value = null
+          
           },
         };
 
