@@ -58,8 +58,28 @@ $(document).ready(function () {
       data: $(".contact-forms").serialize(),
       method: "POST",
       success: function (response) {
-        alert("Form submitted successfully");
-        window.location.reload();
+        let options = {
+          closeButton: true,
+          debug: false,
+          newestOnTop: false,
+          progressBar: true,
+          positionClass: "toast-top-center",
+          preventDuplicates: false,
+          showDuration: "300",
+          hideDuration: "1000",
+          timeOut: "3000",
+          extendedTimeOut: "1000",
+          showEasing: "swing",
+          hideEasing: "linear",
+          showMethod: "fadeIn",
+          hideMethod: "fadeOut",
+          onHidden: function () {
+            window.location.reload();
+          },
+        };
+
+        toastr.success("Message Sent", "Success", options);
+     
       },
       error: function (err) {
         alert("Something Error");
