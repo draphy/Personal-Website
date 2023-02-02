@@ -91,7 +91,7 @@ xmlns:fb="http://ogp.me/ns/fb#" lang="en">
 	<!-- particles -->
 	<div id="particles-js"></div>
 
-	<section class="hero-wrap js-fullheight">
+	<section class="hero-wrap js-fullheight" id="topGunHead">
 		
 		<!--       <div class="overlay"></div> -->
 		<div class="container">
@@ -118,8 +118,7 @@ xmlns:fb="http://ogp.me/ns/fb#" lang="en">
 		<div class="glyphicon glyphicon-arrow-down"></div>
 	</section>
 
-	<section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section" style="background: rgb(124,12,38);
-	background: radial-gradient(circle, rgba(124,12,38,1) 0%, rgba(124,12,38,1) 11%, rgba(0,0,0,1) 100%);">
+	<section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section" >
 		<div class="container">
 			<div class="row d-flex no-gutters">
 				<div id="fireworksOnHover" style="display: none;">
@@ -566,12 +565,14 @@ xmlns:fb="http://ogp.me/ns/fb#" lang="en">
 	<script>
 		document.getElementById('circleImgAbout1').addEventListener('mouseover' , ()=>{
 			document.getElementById('fireworksOnHover').style.display = 'block'
-console.log('hi');
+			document.body.classList.add("backgroundLightRed");
+		
 		
 		})
 		document.getElementById('circleImgAbout1').addEventListener('mouseleave' , ()=>{
 			document.getElementById('fireworksOnHover').style.display = 'none'
-console.log('hi');
+			document.body.classList.remove("backgroundLightRed");
+		
 		
 		})
 	</script>

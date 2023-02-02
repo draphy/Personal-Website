@@ -9795,5 +9795,8 @@ textarea.form-control {
         ;
       }
     }
-
+.backgroundLightRed {
+  background: rgb(124,12,38);
+	background: radial-gradient(circle, rgba(124,12,38,1) 0%, rgba(124,12,38,1) 10%, rgba(0,0,0,1) 80%);
+}
 
